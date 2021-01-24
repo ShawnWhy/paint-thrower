@@ -1,0 +1,235 @@
+
+body{
+  overflow: hidden;
+}
+.wall{
+  width:70%;
+  height:100%;
+  background-color:antiquewhite;
+  position:absolute;
+  overflow: hidden;
+}
+.container{
+  width:30%;
+  height:100%;
+  border:1px solid black;
+  border-radius:5px;
+  position:absolute;
+  right:0;
+  background-color: rgb(209, 214, 216);
+}
+
+.colorSwatch{
+
+  height:10%;
+  width:auto;
+  float:left;
+  border-radius:2.5%;
+
+}
+
+.hollow{
+  visibility:hidden;
+}
+
+.rotateInfinite{
+  animation:rotatePaint .2s  infinite
+}
+
+.rotateSingle{
+  animation:rotatePaint .2s both 
+}
+
+.colorstripe{
+  height:30%;
+  border-radius:50%;
+  margin:auto;
+  margin-top:5%;
+  
+
+}
+.red{
+  background-color:rgba(250,0,0,1);
+}
+
+.green{
+  background-color:rgba(0,250,0,1);
+}
+
+.blue {
+  background-color:rgba(0,0,250,1);
+}
+
+.brush{
+  position:absolute;
+  height:50px;
+  width:50px;
+  border-radius:10px;
+  background-color:burlywood;
+
+}
+.brushSmall{
+  position:absolute;
+  height:20px;
+  width:20px;
+  border-radius:10px;
+  background-color:burlywood;
+
+}
+.brushLarge{
+  position:absolute;
+  height:80px;
+  width:80px;
+  border-radius:10px;
+  background-color:burlywood;
+
+}
+.thrownPaint{
+  height:50px;
+  width:50px;
+  border-radius:10px;
+  animation:throwpaint 1s both linear
+}
+
+.paint{
+  border:10px solid black;
+}
+
+@keyframes rotatePaint{
+0%{transform:rotate(0deg)}
+100%{transform:rotate(350deg)}
+}
+
+
+@keyframes throwPaint{
+  0%{transform:rotate(0deg) translatex(0%)}
+  25%{transform:rotate(350deg)translatex(-25%)}
+  50%{transform:rotate(0deg)translatex(-50%)}
+  75%{transform:rotate(350deg)translatex(-75%)}
+  99%{transform:rotate(0deg)translatex(100%);opacity:100%}
+  100%{transform:rotate(350deg)translatex(100%);opacity:0%}
+  }
+
+  .brushStroke{
+    position:absolute;
+    border-radius:50%;
+
+    
+  }
+  .rotateStroke{
+    border-radius:1%;
+   
+  
+  }
+  .squareStroke{
+    border-radius:1%;
+  }
+
+  .wash{
+   background-color:cornflowerblue;
+   border-radius:5px;
+   height:90px;
+   width:50px;
+   float:right;
+   position:fixed;
+   left:15%;
+   bottom:5%;
+   text-align:center;
+
+  }
+  
+  .wallwash{
+    background-color:orangered;
+    border-radius:5px;
+    height:90px;
+    width:50px;
+    float:right;
+    position:fixed;
+    left:20%;
+    bottom:5%;
+    text-align:center;
+ 
+   }
+   .wallchange{
+    background-color:rgb(233, 16, 179);
+    border-radius:5px;
+    height:90px;
+    width:50px;
+    float:right;
+    position:fixed;
+    left:25%;
+    bottom:5%;
+    text-align:center;
+ 
+   }
+
+  .smallBrush{
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    background-color:burlywood;
+  }
+
+  .mediumBrush{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    background-color:burlywood;
+  }
+
+  .largeBrush{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+    background-color:burlywood;
+
+  }
+
+  .tools{
+    position:fixed;
+    left:5%;
+    bottom:5%;
+  }
+
+  .brushshapes{
+    text-align:center;
+    position:fixed;
+    left:32%;
+    bottom:5%;
+}
+
+.square{
+  width:20px;
+  height:20px;
+  background-color: rgb(112, 202, 202);
+  float:left;
+  margin:5px;
+
+
+}
+.round{
+  width:20px;
+  height:20px;
+  border-radius:10px;
+  background-color: rgb(112, 202, 202);
+  float:left;
+  margin:5px;
+}
+.rotator{
+  width:20px;
+  height:5px;
+  transform:rotate(45deg);
+  transform-origin:center;
+  background-color: rgb(112, 202, 202);
+  position:relative;
+  top:5px;
+  float:left;
+  margin:5px;
+
+ 
+}
+.title{
+  text-align:center;
+  border-radius: 2px;
+  border:1px black solid;
+}
